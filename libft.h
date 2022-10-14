@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:13:16 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/08 15:39:08 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/11 09:07:18 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef	struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }				t_list;
 
-typedef struct	s_split_next
+typedef struct s_split_next
 {
-	size_t start;
-	size_t length;
+	size_t	start;
+	size_t	length;
 }				t_split_next;
 
 int				ft_atoi(const char *str);
