@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 07:43:34 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/08 07:56:21 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:30:14 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		i = (int)len - 1;
 		while (0 <= i)
 		{
-			*(char *)(dst + i) = *(*char *)(src + i);
+			*(char *)(dst + i) = *(char *)(src + i);
 			i--;
 		}
 	}

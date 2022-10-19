@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 16:08:40 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/14 13:55:13 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:30:56 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (0);
 	i = 0;
-	ret = malloc(sizeof(char *) * (ft_wordlen(s, c) + 1));
+	ret = malloc(sizeof(char *) * (wordlen(s, c) + 1));
 	if (!ret)
 		return (0);
 	while (*s)

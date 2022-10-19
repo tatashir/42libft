@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:24:22 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/11 08:02:55 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:47:15 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	i = 0;
 	while (s[i] != '\0')
 	{
-		(*f)(i, &s[i])
+		(*f)(i, &s[i]);
 		i++;
 	}
 }
