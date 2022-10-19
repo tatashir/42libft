@@ -6,13 +6,13 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 07:16:45 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/08 07:22:29 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:07:04 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 
