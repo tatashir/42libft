@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:21:29 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/09 19:10:24 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/22 16:40:07 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,18 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	i;
-	size_t	j;
+	char	*ptr;
+	char	*save;
 
-	str = (char *)malloc(sizeof(*s1) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!str)
+	if (!s1 || !s2)
 		return (NULL);
-	i = 0;
-	j = 0;
-	while (s1[i])
-	{
-		str[j++] = s1[i];
-		i++;
-	}
-	i = 0;
-	while (s2[i])
-	{
-		str[j++] = s1[i];
-		i++;
-	}
-	str[j] = 0;
-	return (str);
+	ptr = (char *)malloc(ft_strlen((s1) + ft_strlen(s2)) + 1);
+	if (!ptr)
+		return (NULL);
+	save = ptr;
+	while (*s1)
+		*ptr++ = *s1++;
+	while (*s2)
+		*ptr++ = *s2++;
+	return (save);
 }

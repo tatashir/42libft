@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 07:16:45 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/19 14:07:04 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:32:26 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-
-	if (!s)
-		return ;
-	i = 0;
-	while (i < n)
-	{
-		*(char *)(s + 1) = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }

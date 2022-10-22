@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:25:45 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/19 13:48:24 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/19 14:45:38 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long	b;
+	long long	b;
 
 	b = n;
 	if (b < 0)
@@ -22,7 +22,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-', fd);
 		b *= -1;
 	}
-	if (b < 9)
+	if (10 <= b)
 	{
 		ft_putnbr_fd(b / 10, fd);
 		ft_putnbr_fd(b % 10, fd);
