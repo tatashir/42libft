@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:23:38 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/19 12:54:51 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:18:22 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,10 @@ char	*ft_itoa(int n)
 	int		num;
 
 	len = get_size(n);
-	s = malloc(sizeof(int) * (len + 1));
+	s = malloc(sizeof(char) * (len + 1));
 	if (!s)
 		return (NULL);
+	s[len] = '\0';
 	num = n;
 	while (len--)
 	{
