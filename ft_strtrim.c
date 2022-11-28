@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:49:39 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/25 17:16:32 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/11/27 17:10:13 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char		*str;
 
 	if (!s1)
+		return (NULL);
+	if (!set)
 		return (NULL);
 	head = s1;
 	tail = s1 + ft_strlen(s1) - 1;

@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:24:22 by tatashir          #+#    #+#             */
-/*   Updated: 2022/11/21 17:25:18 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/11/27 16:48:11 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int	i;
+	size_t	i;
 
 	if (!s || !f)
 		return ;

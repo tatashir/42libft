@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 08:22:19 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/08 08:25:20 by tatashir         ###   ########.fr       */
+/*   Updated: 2022/11/27 17:06:49 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	long long int	i;
 
 	i = 0;
 	while (s[i])
