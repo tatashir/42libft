@@ -6,7 +6,7 @@
 /*   By: tatashir <tatashir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 08:15:09 by tatashir          #+#    #+#             */
-/*   Updated: 2022/10/25 15:15:23 by tatashir         ###   ########.fr       */
+/*   Updated: 2023/01/10 16:13:44 by tatashir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 		if (*s == (char)c)
 			return ((char *)s);
 		if (!*s)
-			return (0);
+			return (NULL);
 		s++;
 	}
 }
